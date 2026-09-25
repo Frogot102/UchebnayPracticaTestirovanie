@@ -1,0 +1,30 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="UchebnayPracticaTestirovanie.Views.ZayavkaWindow"
+        Title="Заявка"
+        Width="420"
+        Height="560"
+        WindowStartupLocation="CenterOwner">
+	<StackPanel Margin="12" Spacing="6">
+		<TextBlock Text="Клиент"/>
+		<ComboBox x:Name="ClientBox" Width="360" HorizontalAlignment="Left"/>
+		<TextBlock Text="Тип"/>
+		<ComboBox x:Name="TypeBox" Width="360" HorizontalAlignment="Left"/>
+		<TextBlock Text="Модель"/>
+		<TextBox x:Name="ModelBox" Width="360" HorizontalAlignment="Left"/>
+		<TextBlock Text="Проблема"/>
+		<TextBox x:Name="ProblemBox" Width="360" Height="70" AcceptsReturn="True" HorizontalAlignment="Left"/>
+		<TextBlock Text="Дата начала"/>
+		<TextBox x:Name="StartBox" Width="160" HorizontalAlignment="Left"/>
+		<TextBlock Text="Статус"/>
+		<ComboBox x:Name="StatusBox" Width="360" HorizontalAlignment="Left"/>
+		<TextBlock Text="Дата окончания"/>
+		<TextBox x:Name="EndBox" Width="160" HorizontalAlignment="Left"/>
+		<TextBlock Text="Запчасти"/>
+		<TextBox x:Name="PartsBox" Width="360" HorizontalAlignment="Left"/>
+		<TextBlock Text="Мастер"/>
+		<ComboBox x:Name="MasterBox" Width="360" HorizontalAlignment="Left"/>
+		<TextBlock x:Name="Err" Foreground="Red" TextWrapping="Wrap"/>
+		<Button Content="Сохранить" Click="Button_Click" HorizontalAlignment="Left" Width="120"/>
+	</StackPanel>
+</Window>

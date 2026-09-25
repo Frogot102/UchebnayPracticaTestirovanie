@@ -1,0 +1,22 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="UchebnayPracticaTestirovanie.Views.UserWindow"
+        Title="Пользователь"
+        Width="380"
+        Height="380"
+        WindowStartupLocation="CenterOwner">
+	<StackPanel Margin="12" Spacing="6">
+		<TextBlock Text="ФИО"/>
+		<TextBox x:Name="NameBox" Width="320" HorizontalAlignment="Left"/>
+		<TextBlock Text="Телефон"/>
+		<TextBox x:Name="PhoneBox" Width="320" HorizontalAlignment="Left"/>
+		<TextBlock Text="Логин"/>
+		<TextBox x:Name="LoginBox" Width="320" HorizontalAlignment="Left"/>
+		<TextBlock Text="Пароль"/>
+		<TextBox x:Name="PassBox" Width="320" HorizontalAlignment="Left"/>
+		<TextBlock Text="Тип"/>
+		<ComboBox x:Name="RoleBox" Width="320" HorizontalAlignment="Left"/>
+		<TextBlock x:Name="Err" Foreground="Red" TextWrapping="Wrap"/>
+		<Button Content="Сохранить" Click="Button_Click" Width="120" HorizontalAlignment="Left"/>
+	</StackPanel>
+</Window>

@@ -1,0 +1,22 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="UchebnayPracticaTestirovanie.Views.MainWindow"
+        Title="Заявки"
+        Width="1000"
+        Height="650"
+        WindowStartupLocation="CenterScreen">
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="*"/>
+		</Grid.RowDefinitions>
+		<StackPanel Grid.Row="0" Orientation="Horizontal" Spacing="10" Margin="10" HorizontalAlignment="Center">
+			<TextBlock x:Name="UserText" VerticalAlignment="Center" Margin="0,0,20,0"/>
+			<Button Content="Заявки" Click="Button_Click" Width="140" Background="LightGreen"/>
+			<Button Content="Комментарии" Click="Button_Click_1" Width="140" Background="LightSkyBlue"/>
+			<Button x:Name="UsersBtn" Content="Пользователи" Click="Button_Click_2" Width="140" Background="Orange"/>
+			<Button Content="Выход" Click="Logout_Click" Width="100"/>
+		</StackPanel>
+		<ContentControl Grid.Row="1" x:Name="MainControl"/>
+	</Grid>
+</Window>

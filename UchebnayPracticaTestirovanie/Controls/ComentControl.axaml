@@ -1,0 +1,20 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="UchebnayPracticaTestirovanie.Controls.ComentControl">
+	<Grid RowDefinitions="Auto,*">
+		<StackPanel Orientation="Horizontal" Spacing="8" Margin="8">
+			<TextBox x:Name="SearchBox" PlaceholderText="Поиск" Width="200"/>
+			<Button Content="Найти" Click="Button_Click_Find"/>
+			<Button x:Name="AddBtn" Content="Добавить" Click="Button_Click_Add"/>
+			<Button x:Name="DelBtn" Content="Удалить" Click="Button_Click_Del"/>
+		</StackPanel>
+		<DataGrid Grid.Row="1" x:Name="Grid" IsReadOnly="True" AutoGenerateColumns="False">
+			<DataGrid.Columns>
+				<DataGridTextColumn Header="№" Binding="{Binding Id}" Width="50"/>
+				<DataGridTextColumn Header="Заявка" Binding="{Binding RequestId}" Width="80"/>
+				<DataGridTextColumn Header="Автор" Binding="{Binding Master}" Width="200"/>
+				<DataGridTextColumn Header="Сообщение" Binding="{Binding Message}" Width="400"/>
+			</DataGrid.Columns>
+		</DataGrid>
+	</Grid>
+</UserControl>

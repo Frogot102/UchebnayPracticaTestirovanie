@@ -1,0 +1,16 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="UchebnayPracticaTestirovanie.Views.ComentWindow"
+        Title="Комментарий"
+        Width="400"
+        Height="280"
+        WindowStartupLocation="CenterOwner">
+	<StackPanel Margin="12" Spacing="6">
+		<TextBlock Text="Заявка"/>
+		<ComboBox x:Name="ReqBox" Width="340" HorizontalAlignment="Left"/>
+		<TextBlock Text="Сообщение"/>
+		<TextBox x:Name="MsgBox" Width="340" Height="80" AcceptsReturn="True" HorizontalAlignment="Left"/>
+		<TextBlock x:Name="Err" Foreground="Red"/>
+		<Button Content="Сохранить" Click="Button_Click" Width="120" HorizontalAlignment="Left"/>
+	</StackPanel>
+</Window>
